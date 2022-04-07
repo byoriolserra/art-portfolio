@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import styled from 'styled-components'
+import Hero from './components/Hero'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <li>Contact</li>
         </ul>
       </Navbar>
+      <Hero />
     </AppContainer>
   )
 }
@@ -21,36 +23,41 @@ export default App
 const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   background-color: #f5f5f5;
   font-family: forma-djr-deck, sans-serif;
+  display: flex;
 `
 const Navbar = styled.nav`
-  transform-origin: left top;
-  transform: rotate(-90deg) translateX(-100%);
-  height: 122px;
-  width: 100vh;
-  font-size: 40px;
+  width: 10%;
+  white-space: nowrap;
+  font-size: 6vw;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   color: #161616;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  @media only screen and (min-width: 426px) {
+    font-size: 40px;
+  }
+  @media only screen and (min-width: 1441px) {
+    font-size: 80px;
+  }
   ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
+    list-style: none;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     li {
       :hover {
         cursor: pointer;
         text-decoration: underline;
-        text-underline-offset: 8px;
+        @media only screen and (min-width: 1400px) {
+          text-underline-offset: 8px;
+        }
       }
     }
   }
