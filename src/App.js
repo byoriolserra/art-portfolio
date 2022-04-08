@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import styled from 'styled-components'
 import Hero from './components/Hero'
+import AboutMe from './components/AboutMe'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <li>Contact</li>
         </ul>
       </Navbar>
-      <Hero />
+      {/* <Hero /> */}
+      <AboutMe />
     </AppContainer>
   )
 }
@@ -40,9 +42,6 @@ const Navbar = styled.nav`
   justify-content: center;
   @media only screen and (min-width: 426px) {
     font-size: 40px;
-  }
-  @media only screen and (min-width: 1441px) {
-    font-size: 80px;
   }
   ul {
     height: 100vh;
