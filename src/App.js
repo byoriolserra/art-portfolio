@@ -3,6 +3,7 @@ import './App.css'
 import styled from 'styled-components'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
+import Pieces from './components/Pieces'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         </ul>
       </Navbar>
       {/* <Hero /> */}
-      <AboutMe />
+      {/* <AboutMe /> */}
+      <Pieces />
     </AppContainer>
   )
 }
