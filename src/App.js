@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css'
 import styled from 'styled-components'
-// import Hero from './components/Hero'
-// import AboutMe from './components/AboutMe'
-// import Pieces from './components/Pieces'
+import { Routes, Route, Link } from 'react-router-dom'
+import Hero from './components/Hero'
+import AboutMe from './components/AboutMe'
+import Pieces from './components/Pieces'
 import Contact from './components/Contact'
 
 function App() {
@@ -11,15 +12,17 @@ function App() {
     <AppContainer>
       <Navbar>
         <ul>
-          <li>About Me</li>
-          <li>Pieces</li>
-          <li>Contact</li>
+          <NavLink to="about-me"><li>About Me</li></NavLink>
+          <NavLink to="pieces"><li>Pieces</li></NavLink>
+          <NavLink to="contact"><li>Contact</li></NavLink>
         </ul>
       </Navbar>
-      {/* <Hero /> */}
-      {/* <AboutMe /> */}
-      {/* <Pieces /> */}
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="about-me" element={<AboutMe />} />
+        <Route path="pieces" element={<Pieces />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
     </AppContainer>
   )
 }
@@ -64,4 +67,8 @@ const Navbar = styled.nav`
       }
     }
   }
+`
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: black;
 `
