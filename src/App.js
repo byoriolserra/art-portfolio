@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css'
 import styled from 'styled-components'
-import Hero from './components/Hero'
-import AboutMe from './components/AboutMe'
-import Pieces from './components/Pieces'
+// import Hero from './components/Hero'
+// import AboutMe from './components/AboutMe'
+// import Pieces from './components/Pieces'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       </Navbar>
       {/* <Hero /> */}
       {/* <AboutMe /> */}
-      <Pieces />
+      {/* <Pieces /> */}
+      <Contact />
     </AppContainer>
   )
 }
