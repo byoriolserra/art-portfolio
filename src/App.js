@@ -18,7 +18,7 @@ function App() {
         </ul>
       </Navbar>
       <Routes>
-        <Route path="art-portfolio" element={<Hero />} />
+        <Route path="/" element={<Hero />} />
         <Route path="about-me" element={<AboutMe />} />
         <Route path="pieces" element={<Pieces />} />
         <Route path="contact" element={<Contact />} />
