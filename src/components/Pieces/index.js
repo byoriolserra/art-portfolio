@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Vapor from './assets/vapor.png'
+import Vapor from './assets/vapor.webp'
 
 const Pieces = () => {
   return (
