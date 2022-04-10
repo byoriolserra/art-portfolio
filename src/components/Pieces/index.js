@@ -35,13 +35,12 @@ const PiecesGrid = styled.div`
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-    @media only screen and (mind-width: 490px) {
-        width: 70%;
-    }
+    width: 70%;
+    max-height: 90vh;
 `
 const Piece = styled.div`
-    width: 250px;
-    height: 250px;
+    width: 40vw;
+    height: 40vw;
     background-color: rgba(196, 196, 196, 0.3);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -62,5 +61,9 @@ const Piece = styled.div`
         p {
             opacity: 0.3;
         }
+    }
+    @media only screen and (min-width: 500px) {
+        width: 250px;
+        height: 250px;
     }
 `

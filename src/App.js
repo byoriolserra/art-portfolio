@@ -12,13 +12,13 @@ function App() {
     <AppContainer>
       <Navbar>
         <ul>
-          <NavLink to="about-me"><li>About Me</li></NavLink>
-          <NavLink to="pieces"><li>Pieces</li></NavLink>
           <NavLink to="contact"><li>Contact</li></NavLink>
+          <NavLink to="pieces"><li>Pieces</li></NavLink>
+          <NavLink to="about-me"><li>About Me</li></NavLink>
         </ul>
       </Navbar>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="art-portfolio" element={<Hero />} />
         <Route path="about-me" element={<AboutMe />} />
         <Route path="pieces" element={<Pieces />} />
         <Route path="contact" element={<Contact />} />
