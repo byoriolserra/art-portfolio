@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from './assets/aboutme.JPG'
+import image from './assets/aboutme.webp'
 
 const AboutMe = () => {
   const paragraph = 'Vapor, my first film, is currently in the distribution process, and I am already writing a second script. In addition, I am starting to get into music production.'
