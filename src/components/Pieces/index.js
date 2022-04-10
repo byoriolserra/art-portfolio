@@ -7,7 +7,7 @@ const Pieces = () => {
     <PiecesContaier>
         <PiecesGrid>
             <Piece>
-                <img src={Vapor} alt='Vapor film poster' />
+                <a href="https://www.themoviedb.org/movie/814172-vapor" target="_blank" rel="noreferrer"><img src={Vapor} alt='Vapor film poster' /></a>
             </Piece>
             <Piece>
                 <p>Coming soon.</p>
@@ -48,6 +48,11 @@ const Piece = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
     img {
         width: 100%;
         height: 100%;
