@@ -7,7 +7,7 @@ const Pieces = () => {
     <PiecesContaier>
         <PiecesGrid>
             <Piece>
-                <img src={Vapor} alt='' />
+                <img src={Vapor} alt='Vapor film poster' />
             </Piece>
             <Piece>
                 <p>Coming soon.</p>
